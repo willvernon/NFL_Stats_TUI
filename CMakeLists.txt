@@ -27,9 +27,9 @@ FetchContent_MakeAvailable(ftxui)
 # ------------------------------------------------------------------------------
 
 add_executable(stat-terminal src/main.cpp)
-target_include_directories(ftxui-starter PRIVATE src)
+target_include_directories(stat-terminal PRIVATE src)
 
-target_link_libraries(ftxui-starter
+target_link_libraries(stat-terminal
   PRIVATE ftxui::screen
   PRIVATE ftxui::dom
   PRIVATE ftxui::component  # Not needed for this example.
